@@ -1,2 +1,3 @@
 # Vidaltec
- Site criado para um projeto
+ Site em andamento <br>
+ https://lipevidal.github.io/Vidaltec/
