@@ -1,0 +1,66 @@
+/*@media (min-width: 1140px){
+    .conteudoTopo{
+        flex-direction: column;
+    }
+    #topo .logoInformacoes{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 730px){
+    #topo .logoInformacoes{
+        flex-direction: row;
+    }
+    .iconeInformacoesContato{
+        display: flex;
+        justify-content: space-between;
+    }
+    #topo .containerLogoIcones{
+        flex-direction: row;
+    }
+    .logo button{
+        display: none;
+    }
+}*/
+
+@media (max-width: 1090px){
+    #topo .conteudoTopo .logoInformacoes{
+        flex-direction: column;
+    }
+    #topo .conteudoTopo .logoInformacoes .containerLogoIcones{
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px){
+    #topo{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    #topo .conteudoTopo .logoInformacoes .iconeInformacoesContato{
+        display: none;
+    }
+
+    #topo .conteudoTopo .logoInformacoes .containerLogoIcones button{
+        display: block;
+    }
+
+    #topo .conteudoTopo nav{
+        display: none;
+    }
+}
+
+@media (max-width: 550px){
+    #topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

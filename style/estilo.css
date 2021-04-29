@@ -1,0 +1,155 @@
+/********Geral************/
+
+:root{
+    --corPrincipal: rgb(255, 125, 0);
+    --corSecundaria: #131d3b;
+    --corPadrao: #fff;
+}
+
+
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+}
+
+.container{
+    max-width: 1300px;
+}
+
+/********Topo***********/
+
+#topo{
+    width: 100%;
+    background-color: var(--corSecundaria);
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#topo .conteudoTopo{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    width: 100%;
+    padding: 10px;
+}
+
+#topo .conteudoTopo .logoInformacoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: red;
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones .logo{
+    background-color: green;
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones .logo img{
+    width: 150px;
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais i{
+    background-color: brown;
+    margin: 20px;
+    color: var(--corPadrao);
+    font-size: 1.1em;
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais i:hover{
+    color: var(--corPrincipal);
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones button{
+    display: none;
+    margin-left: 30px;
+    border: 1px solid var(--corPadrao);
+    background-color: transparent;
+}
+
+#topo .conteudoTopo .logoInformacoes .containerLogoIcones button i{
+    font-size: 1.8em;
+    padding: 10px;
+    color: var(--corPrincipal);
+}
+
+#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato{
+    background-color: black;
+    display: flex;
+}
+
+#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes{
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes i{
+    color: var(--corPrincipal);
+    font-size: 1.5em;
+    padding: 10px;
+    border: 1px solid var(--corPrincipal);
+    border-radius: 50%;
+}
+
+#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes .contatos{
+    background-color: blueviolet;
+    color: var(--corPadrao);
+    margin: 5px;
+}
+
+/*********nav***********/
+#topo .conteudoTopo nav{
+    background-color: var(--corPrincipal);
+    width: 80%;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#topo .conteudoTopo nav ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: violet;
+    margin-bottom: 0;
+}
+
+#topo .conteudoTopo nav ul li{
+    border: 1px solid black;
+}
+
+#topo .conteudoTopo nav ul li a{
+    text-decoration: none;
+    color: var(--corPadrao);
+    font-weight: 700;
+}
+
