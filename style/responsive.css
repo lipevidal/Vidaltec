@@ -1,4 +1,4 @@
-@media (max-width: 1090px){
+@media (max-width: 1120px){
     #topo .conteudoTopo .logoInformacoes{
         flex-direction: column;
     }
@@ -8,7 +8,7 @@
     }
 }
 
-@media (max-width: 720px){
+@media (max-width: 750px){
     #topo{
         padding-bottom: 0;
         margin-bottom: 0;
@@ -29,6 +29,14 @@
 @media (max-width: 550px){
     #topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais{
         display: none;
+    }
+    #banner .apresentacao h1{
+        font-size: 1.8em;
+        width: 90%;
+    }
+    #banner .apresentacao p{
+        font-size: 1.2em;
+        width: 95%;
     }
 }
 

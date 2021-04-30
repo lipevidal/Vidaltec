@@ -34,9 +34,9 @@ body{
 #topo .conteudoTopo{
     display: flex;
     justify-content: center;
-    background-color: yellow;
+    /*background-color: yellow;*/
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 
 #topo .conteudoTopo .logoInformacoes{
@@ -44,11 +44,11 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: red;
+    /*background-color: red;*/
 }
 
 #topo .conteudoTopo .logoInformacoes .containerLogoIcones{
-    background-color: gray;
+    /*background-color: gray;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +56,8 @@ body{
 }
 
 #topo .conteudoTopo .logoInformacoes .containerLogoIcones .logo{
-    background-color: green;
+    /*background-color: green;*/
+    margin-right: 5%;
 }
 
 #topo .conteudoTopo .logoInformacoes .containerLogoIcones .logo img{
@@ -64,14 +65,14 @@ body{
 }
 
 #topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais{
-    background-color: orange;
+    /*background-color: orange;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais i{
-    background-color: brown;
+    /*background-color: brown;*/
     margin: 20px;
     color: var(--corPadrao);
     font-size: 1.1em;
@@ -96,7 +97,7 @@ body{
 
 #topo .conteudoTopo .logoInformacoes .containerLogoIcones nav.toggle{
     display: none;
-    width: 90%;
+    width: 100%;
     background-color: var(--corPrincipal);
     position: absolute;
     top: 100%;
@@ -124,16 +125,16 @@ body{
 }
 
 #topo .conteudoTopo .logoInformacoes .iconeInformacoesContato{
-    background-color: black;
+    /*background-color: black;*/
     display: flex;
 }
 
 #topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes{
-    background-color: salmon;
+    /*background-color: salmon;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 5px;
+    margin: 7px;
 }
 
 #topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes i{
@@ -145,7 +146,7 @@ body{
 }
 
 #topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes .contatos{
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     color: var(--corPadrao);
     margin: 5px;
 }
@@ -153,14 +154,15 @@ body{
 /*********nav***********/
 #topo .conteudoTopo nav.principal{
     background-color: var(--corPrincipal);
-    width: 80%;
+    width: 90%;
+    max-width: 1300px;
     border-radius: 5px;
     position: absolute;
     bottom: -35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    
 }
 
 #topo .conteudoTopo nav.principal ul{
@@ -169,12 +171,25 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: violet;
+    /*background-color: violet;*/
     margin-bottom: 0;
 }
 
 #topo .conteudoTopo nav.principal ul li{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: var(--corPrincipal);
+}
+
+#topo .conteudoTopo nav.principal ul li:last-child{
+    background-color: var(--corPadrao);
+    border-radius: 0 5px 5px 0;
+}
+
+#topo .conteudoTopo nav.principal ul li:last-child a{
+    color: var(--corPrincipal);
 }
 
 #topo .conteudoTopo nav.principal ul li a{
@@ -183,3 +198,35 @@ body{
     font-weight: 700;
 }
 
+/********banner**********/
+#banner{
+    width: 100%;
+    height: 600px;
+    background: url('../imagens/capa2.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: -50px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#banner .apresentacao{
+    width: 100%;
+    padding: 20px;
+    /*background-color: lawngreen;*/
+}
+
+#banner .apresentacao h1{
+    width: 80%;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--corSecundaria);
+    text-shadow: 2px 2px 5px white;
+}
+
+#banner .apresentacao p{
+    font-size: 2em;
+    width: 85%;
+}
