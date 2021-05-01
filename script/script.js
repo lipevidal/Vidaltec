@@ -43,9 +43,9 @@ console.log(resposta)
 console.log(resultado)
 
 if ((resposta == 'sabado' && resultado == 'OKsabado') || (resposta == 'OK' && (resultado == 'OKsabado' || resultado == 'OKtudo'))){
-    total = 'Aberto agora';
+    total = 'Online';
 } else {
-    total = 'Fechado agora';
+    total = 'Offline';
 }
 
 console.log(total);

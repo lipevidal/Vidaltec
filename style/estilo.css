@@ -23,7 +23,7 @@ body{
 
 /*********wpp************/
 #wpp{
-    width: 120px;
+    width: 100px;
     text-align: center;
     position: fixed;
     z-index: 2;
@@ -241,7 +241,7 @@ body{
 /********banner**********/
 #banner{
     width: 100%;
-    height: 600px;
+    height: 650px;
     background: url('../imagens/capa2.jpg') no-repeat center;
     background-size: cover;
     margin-top: -50px;
@@ -252,7 +252,7 @@ body{
 
 .escuro{
     width: 100%;
-    height: 650px;
+    height: 700px;
     background-color: rgba(0,0,0,0.5);
     margin-top: -50px;
     display: flex;
@@ -285,6 +285,7 @@ body{
 
 #informacoes{
     background-color: transparent;
+    margin-bottom: 10px;
 }
 #informacoes .caixas{
     background-color: transparent;
@@ -292,7 +293,7 @@ body{
     margin-top: -50px;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #informacoes .caixas .conteudoCaixa{
@@ -322,4 +323,94 @@ body{
 
 #informacoes .caixas .conteudoCaixa p{
     text-align: justify;
+}
+
+#informacoes .caixas .conteudoCaixa button,
+#informacoes .caixas .conteudoCaixa a{
+    padding: 5px 10px;
+    border: 1px solid var(--corPrincipal);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--corPrincipal);
+    text-decoration: none;
+}
+
+#informacoes .caixas .conteudoCaixa button:hover,
+#informacoes .caixas .conteudoCaixa a:hover{
+    background-color: var(--corPrincipal);
+    color: var(--corPadrao);
+}
+
+/*****acessórios******/
+
+#acessorios{
+    background-color: #ccc;
+    padding-bottom: 50px;
+}
+
+#acessorios h4{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5em;
+}
+
+#acessorios .caixas-itens{
+    /*background-color: yellow;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#acessorios .caixas-itens .itens{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
+    width: 45%;
+    height: 230px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#acessorios .caixas-itens .itens .caixa-img{
+    width: 40%;
+    height: 227px;
+    border-radius: 15px 0 0 15px;
+    background: url('../imagens/fone.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#acessorios .caixas-itens .itens .caixa-conteudo{
+    padding: 20px;
+    /*background-color: blue;*/
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#acessorios .caixas-itens .itens .caixa-conteudo h5{
+    width: 100%;
+    color: var(--corSecundaria);
+    text-shadow: 0 0 2px black;
+}
+
+#acessorios .caixas-itens .itens .caixa-conteudo p{
+    width: 100%;
+    overflow-y: hidden;
+}
+
+#acessorios .caixas-itens .itens .caixa-conteudo button{
+    padding: 5px 10px;
+    border: 1px solid var(--corSecundaria);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--corSecundaria);
+    text-decoration: none;
+}
+
+#acessorios .caixas-itens .itens .caixa-conteudo button:hover{
+    background-color: var(--corPrincipal);
+    color: var(--corPadrao); 
+    border: 1px solid var(--corPrincipal);
 }
