@@ -22,8 +22,19 @@
     }
 }
 
+
+
+
+
+
 @media (max-width: 750px){
-    #wpp{
+    #seta{
+        bottom: 120px;
+    }
+    #seta i{
+        font-size: 2em;
+    }
+    #wpp, #seta{
         width: 80px;
     }
     #wpp span{
@@ -81,7 +92,38 @@
     #acessorios .caixas-itens .itens .caixa-conteudo h5{
         text-align: center;
     }
+
+    #servicos .todos-servicos{
+        flex-direction: column;
+        align-items: center;
+    }
+    #servicos .todos-servicos .img-servicos{
+        width: 100%;
+    }
+    #servicos .todos-servicos .conteudo-servicos{
+        width: 90%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    #servicos .todos-servicos .conteudo-servicos h3,
+    #servicos .todos-servicos .conteudo-servicos h3.inverso{
+        text-align: center;
+    }
+    #servicos .flex-item > .conteudo-servicos{
+        order: 2;
+    }
+    #servicos .flex-item > .img-servicos{
+        order: 1;
+    }
 }
+
+
+
+
+
+
+
+
 
 @media (max-width: 550px){
     #topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais{

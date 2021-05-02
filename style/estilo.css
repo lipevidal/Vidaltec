@@ -21,6 +21,25 @@ body{
     max-width: 1300px;
 }
 
+/*********seta***********/
+
+#seta{
+    width: 100px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    bottom: 130px;
+    right: 10px;
+    box-shadow: 0 0 1px #ccc;
+    background-color: rgba(54, 31, 31, 0.8);
+    padding: 10px;
+}
+
+#seta i{
+    font-size: 2.5em;
+    color: #ccc;
+}
+
 /*********wpp************/
 #wpp{
     width: 100px;
@@ -285,7 +304,7 @@ body{
 
 #informacoes{
     background-color: transparent;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 #informacoes .caixas{
     background-color: transparent;
@@ -362,6 +381,7 @@ body{
 }
 
 #acessorios .caixas-itens .itens{
+    background-color: white;
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 0 0 5px black;
@@ -375,7 +395,35 @@ body{
     width: 40%;
     height: 227px;
     border-radius: 15px 0 0 15px;
+}
+
+#acessorios .caixas-itens .itens .img1{
     background: url('../imagens/fone.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#acessorios .caixas-itens .itens .img2{
+    background: url('../imagens/caixaSom.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#acessorios .caixas-itens .itens .img3{
+    background: url('../imagens/carregador.png') no-repeat center;
+    background-size: cover;
+}
+
+#acessorios .caixas-itens .itens .img4{
+    background: url('../imagens/mouse.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#acessorios .caixas-itens .itens .img5{
+    background: url('../imagens/relogio.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#acessorios .caixas-itens .itens .img6{
+    background: url('../imagens/capinha.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -413,4 +461,90 @@ body{
     background-color: var(--corPrincipal);
     color: var(--corPadrao); 
     border: 1px solid var(--corPrincipal);
+}
+
+/*********servicos*********/
+
+#servicos{
+    background-color: var(--corPrincipal);
+    padding-bottom: 50px;
+}
+
+#servicos h4{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5em;
+    color: var(--corPadrao);
+}
+
+#servicos .todos-servicos{
+    /*background-color: yellow;*/
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#servicos .todos-servicos .img-servicos{
+    width: 50%;
+    height: 300px;
+}
+
+#servicos .todos-servicos .img1{
+    background: url('../imagens/formatacao.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#servicos .todos-servicos .img2{
+    background: url('../imagens/manutencao.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#servicos .todos-servicos .img3{
+    background: url('../imagens/concerto.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#servicos .todos-servicos .conteudo-servicos{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+}
+
+#servicos .todos-servicos .dir{
+    margin-left: 0;
+}
+
+#servicos .todos-servicos .esq{
+    margin-right: 0;
+}
+
+#servicos .todos-servicos .conteudo-servicos h3{
+    width: 100%;
+    text-align: left;
+    color: var(--corSecundaria);
+}
+
+#servicos .todos-servicos .conteudo-servicos h3.inverso{
+    width: 100%;
+    text-align: right;
+    margin-right: 0
+}
+
+#servicos .todos-servicos .conteudo-servicos p{
+    text-align: justify;
+}
+
+#servicos .todos-servicos .conteudo-servicos button{
+    padding: 10px;
+    border: 1px solid var(--corPadrao);
+    border-radius: 20px;
+    color: var(--corPadrao);
+    background-color: transparent;
+}
+
+#servicos .todos-servicos .conteudo-servicos button:hover{
+    border: 1px solid var(--corSecundaria);
+    color: var(--corSecundaria);
 }
