@@ -5,6 +5,7 @@ $('#topo button').click(function(){
 var data = new Date();
 var semana = data.getDay();
 var hora = data.getHours();
+var ano = data.getFullYear();
 var resposta;
 var resultado;
 var total;
@@ -51,3 +52,5 @@ if ((resposta == 'sabado' && resultado == 'OKsabado') || (resposta == 'OK' && (r
 console.log(total);
 
 $('#demo').text(total);
+
+$('#direitos').text(ano);

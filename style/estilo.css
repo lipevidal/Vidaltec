@@ -17,11 +17,67 @@ body{
     background-color:white;
 }
 
+h4{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5em;
+}
+
 .container{
     max-width: 1300px;
 }
 
-/*********seta***********/
+.logo{
+    margin-right: 5%;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.iconeRedesSociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconeRedesSociais i{
+    margin: 20px;
+    color: var(--corPadrao);
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.iconeRedesSociais i:hover{
+    color: var(--corPrincipal);
+}
+
+.iconeInformacoesContato{
+    display: flex;
+}
+
+.caixaInformacoes{
+    /*background-color: salmon;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px;
+}
+
+.caixaInformacoes i{
+    color: var(--corPrincipal);
+    font-size: 1.5em;
+    padding: 10px;
+    border: 1px solid var(--corPrincipal);
+    border-radius: 50%;
+}
+
+.caixaInformacoes .contatos{
+    color: var(--corPadrao);
+    margin: 5px;
+}
+
+/*********seta volta ao topo***********/
 
 #seta{
     width: 100px;
@@ -40,7 +96,7 @@ body{
     color: #ccc;
 }
 
-/*********wpp************/
+/*********whatsApp************/
 #wpp{
     width: 100px;
     text-align: center;
@@ -82,127 +138,88 @@ body{
 #topo .conteudoTopo{
     display: flex;
     justify-content: center;
-    /*background-color: yellow;*/
     width: 100%;
     padding: 20px;
 }
 
-#topo .conteudoTopo .logoInformacoes{
+#topo .logoInformacoes{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    /*background-color: red;*/
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones{
-    /*background-color: gray;*/
+#topo .containerLogoIcones{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones .logo{
-    /*background-color: green;*/
-    margin-right: 5%;
-}
-
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones .logo img{
-    width: 150px;
-}
-
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais{
-    /*background-color: orange;*/
-    display: flex;
-    align-items: center;
+#topo .iconeRedesSociais{
     justify-content: space-between;
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais i{
-    /*background-color: brown;*/
-    margin: 20px;
-    color: var(--corPadrao);
-    font-size: 1.1em;
-    cursor: pointer;
-}
-
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones .iconeRedesSociais i:hover{
-    color: var(--corPrincipal);
-}
-
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones button{
+#topo button{
     display: none;
     margin-left: 30px;
     border: 1px solid var(--corPadrao);
     background-color: transparent;
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones button i{
+#topo button i{
     font-size: 1.8em;
     padding: 10px;
     color: var(--corPrincipal);
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones nav.toggle{
-    display: none;
-    width: 100%;
+/*********nav-geral***********/
+
+nav {
     background-color: var(--corPrincipal);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    z-index: 2;
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones nav.toggle ul{
+nav ul{
     list-style-type: none;
-    text-align: center;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones nav.toggle ul li{
-    padding: 8px 0;
+nav li{
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
 }
 
-#topo .conteudoTopo .logoInformacoes .containerLogoIcones nav.toggle ul li a{
+nav a{
     text-decoration: none;
     color: var(--corPadrao);
     display: inline-block;
     width: 100%;
-    font-size: 1.3em;
+    font-weight: 700;
+    font-size: 1em;
 }
 
-#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato{
-    /*background-color: black;*/
-    display: flex;
+nav li:last-child{
+    background-color: var(--corPadrao);
 }
 
-#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes{
-    /*background-color: salmon;*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 7px;
-}
-
-#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes i{
+nav li:last-child a{
     color: var(--corPrincipal);
-    font-size: 1.5em;
-    padding: 10px;
-    border: 1px solid var(--corPrincipal);
-    border-radius: 50%;
 }
 
-#topo .conteudoTopo .logoInformacoes .iconeInformacoesContato .caixaInformacoes .contatos{
-    /*background-color: blueviolet;*/
-    color: var(--corPadrao);
-    margin: 5px;
+nav li:hover a{
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/*********nav***********/
-#topo .conteudoTopo nav.principal{
-    background-color: var(--corPrincipal);
+nav li:last-child:hover a{
+    color: var(--corSecundaria);
+}
+
+/*******nav-principal********/
+
+nav.principal{
     width: 90%;
     max-width: 1300px;
     border-radius: 5px;
@@ -214,47 +231,38 @@ body{
     
 }
 
-#topo .conteudoTopo nav.principal ul{
-    list-style-type: none;
-    padding: 0;
+nav.principal ul{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*background-color: violet;*/
-    margin-bottom: 0;
 }
 
-#topo .conteudoTopo nav.principal ul li{
-    /*border: 1px solid black;*/
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    background-color: var(--corPrincipal);
-    cursor: pointer;
-}
-
-#topo .conteudoTopo nav.principal ul li:last-child{
-    background-color: var(--corPadrao);
+nav.principal li:last-child{
     border-radius: 0 5px 5px 0;
 }
 
-#topo .conteudoTopo nav.principal ul li:last-child a{
-    color: var(--corPrincipal);
+/**********nav-toggle*********/
+
+nav.toggle{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 2;
 }
 
-#topo .conteudoTopo nav.principal ul li a{
-    text-decoration: none;
-    color: var(--corPadrao);
-    font-weight: 700;
+nav.toggle ul{
+    text-align: center;
 }
 
-#topo .conteudoTopo nav.principal ul li:hover a{
-    color: rgba(255, 255, 255, 0.8);
+nav.toggle li{
+    padding: 15px 0;
 }
 
-#topo .conteudoTopo nav.principal ul li:last-child:hover a{
-    color: var(--corSecundaria);
+nav.toggle a{
+    font-weight: 500;
 }
 
 /********banner**********/
@@ -282,10 +290,9 @@ body{
 #banner .apresentacao{
     width: 100%;
     padding: 20px;
-    /*background-color: lawngreen;*/
 }
 
-#banner .apresentacao h1{
+#banner h1{
     width: 80%;
     font-size: 3em;
     text-transform: uppercase;
@@ -294,7 +301,7 @@ body{
     color: var(--corSecundaria);
 }
 
-#banner .apresentacao p{
+#banner p{
     font-size: 2em;
     width: 85%;
     color: white;
@@ -315,7 +322,7 @@ body{
     justify-content: space-evenly;
 }
 
-#informacoes .caixas .conteudoCaixa{
+#informacoes .conteudoCaixa{
     background-color: var(--corPadrao);
     border: 1px solid #ccc;
     margin: 0;
@@ -328,7 +335,7 @@ body{
     align-content: flex-start;
 }
 
-#informacoes .caixas .conteudoCaixa i{
+#informacoes .conteudoCaixa i{
     color: var(--corPrincipal);
     font-size: 3em;
     padding: 30px;
@@ -336,16 +343,16 @@ body{
     border-radius: 50%;
 }
 
-#informacoes .caixas .conteudoCaixa h3{
+#informacoes h3{
     text-align: center;
 }
 
-#informacoes .caixas .conteudoCaixa p{
+#informacoes p{
     text-align: justify;
 }
 
-#informacoes .caixas .conteudoCaixa button,
-#informacoes .caixas .conteudoCaixa a{
+#informacoes button,
+#informacoes a{
     padding: 5px 10px;
     border: 1px solid var(--corPrincipal);
     border-radius: 10px;
@@ -354,8 +361,8 @@ body{
     text-decoration: none;
 }
 
-#informacoes .caixas .conteudoCaixa button:hover,
-#informacoes .caixas .conteudoCaixa a:hover{
+#informacoes button:hover,
+#informacoes a:hover{
     background-color: var(--corPrincipal);
     color: var(--corPadrao);
 }
@@ -367,20 +374,13 @@ body{
     padding-bottom: 50px;
 }
 
-#acessorios h4{
-    text-align: center;
-    padding: 50px 0;
-    font-size: 2.5em;
-}
-
 #acessorios .caixas-itens{
-    /*background-color: yellow;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-#acessorios .caixas-itens .itens{
+#acessorios .itens{
     background-color: white;
     border: 1px solid black;
     border-radius: 15px;
@@ -391,43 +391,38 @@ body{
     margin-bottom: 20px;
 }
 
-#acessorios .caixas-itens .itens .caixa-img{
+#acessorios .img1{
+    background: url('../imagens/fone.jpg') no-repeat center;
+}
+
+#acessorios .img2{
+    background: url('../imagens/caixaSom.jpg') no-repeat center;
+}
+
+#acessorios .img3{
+    background: url('../imagens/carregador.png') no-repeat center;
+}
+
+#acessorios .img4{
+    background: url('../imagens/mouse.jpg') no-repeat center;
+}
+
+#acessorios .img5{
+    background: url('../imagens/relogio.jpg') no-repeat center;
+}
+
+#acessorios .img6{
+    background: url('../imagens/capinha.jpg') no-repeat center;
+}
+
+#acessorios .caixa-img{
     width: 40%;
     height: 227px;
     border-radius: 15px 0 0 15px;
-}
-
-#acessorios .caixas-itens .itens .img1{
-    background: url('../imagens/fone.jpg') no-repeat center;
     background-size: cover;
 }
 
-#acessorios .caixas-itens .itens .img2{
-    background: url('../imagens/caixaSom.jpg') no-repeat center;
-    background-size: cover;
-}
-
-#acessorios .caixas-itens .itens .img3{
-    background: url('../imagens/carregador.png') no-repeat center;
-    background-size: cover;
-}
-
-#acessorios .caixas-itens .itens .img4{
-    background: url('../imagens/mouse.jpg') no-repeat center;
-    background-size: cover;
-}
-
-#acessorios .caixas-itens .itens .img5{
-    background: url('../imagens/relogio.jpg') no-repeat center;
-    background-size: cover;
-}
-
-#acessorios .caixas-itens .itens .img6{
-    background: url('../imagens/capinha.jpg') no-repeat center;
-    background-size: cover;
-}
-
-#acessorios .caixas-itens .itens .caixa-conteudo{
+#acessorios .caixa-conteudo{
     padding: 20px;
     /*background-color: blue;*/
     width: 60%;
@@ -437,18 +432,18 @@ body{
     align-items: center;
 }
 
-#acessorios .caixas-itens .itens .caixa-conteudo h5{
+#acessorios h5{
     width: 100%;
     color: var(--corSecundaria);
     text-shadow: 0 0 2px black;
 }
 
-#acessorios .caixas-itens .itens .caixa-conteudo p{
+#acessorios p{
     width: 100%;
     overflow-y: hidden;
 }
 
-#acessorios .caixas-itens .itens .caixa-conteudo button{
+#acessorios button{
     padding: 5px 10px;
     border: 1px solid var(--corSecundaria);
     border-radius: 10px;
@@ -457,7 +452,7 @@ body{
     text-decoration: none;
 }
 
-#acessorios .caixas-itens .itens .caixa-conteudo button:hover{
+#acessorios button:hover{
     background-color: var(--corPrincipal);
     color: var(--corPadrao); 
     border: 1px solid var(--corPrincipal);
@@ -471,39 +466,36 @@ body{
 }
 
 #servicos h4{
-    text-align: center;
-    padding: 50px 0;
-    font-size: 2.5em;
     color: var(--corPadrao);
 }
 
 #servicos .todos-servicos{
-    /*background-color: yellow;*/
     display: flex;
     margin-bottom: 30px;
 }
 
-#servicos .todos-servicos .img-servicos{
+#servicos .img-servicos{
     width: 50%;
     height: 300px;
 }
 
-#servicos .todos-servicos .img1{
+#servicos .img1{
     background: url('../imagens/formatacao.jpg') no-repeat center;
-    background-size: cover;
 }
 
-#servicos .todos-servicos .img2{
+#servicos .img2{
     background: url('../imagens/manutencao.jpg') no-repeat center;
-    background-size: cover;
 }
 
-#servicos .todos-servicos .img3{
+#servicos .img3{
     background: url('../imagens/concerto.jpg') no-repeat center;
+}
+
+#servicos .img-servicos{
     background-size: cover;
 }
 
-#servicos .todos-servicos .conteudo-servicos{
+#servicos .conteudo-servicos{
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -512,31 +504,31 @@ body{
     border: 1px solid #ccc;
 }
 
-#servicos .todos-servicos .dir{
+#servicos .dir{
     margin-left: 0;
 }
 
-#servicos .todos-servicos .esq{
+#servicos .esq{
     margin-right: 0;
 }
 
-#servicos .todos-servicos .conteudo-servicos h3{
+#servicos h3{
     width: 100%;
     text-align: left;
     color: var(--corSecundaria);
 }
 
-#servicos .todos-servicos .conteudo-servicos h3.inverso{
+#servicos h3.inverso{
     width: 100%;
     text-align: right;
     margin-right: 0
 }
 
-#servicos .todos-servicos .conteudo-servicos p{
+#servicos p{
     text-align: justify;
 }
 
-#servicos .todos-servicos .conteudo-servicos button{
+#servicos button{
     padding: 10px;
     border: 1px solid var(--corPadrao);
     border-radius: 20px;
@@ -544,7 +536,7 @@ body{
     background-color: transparent;
 }
 
-#servicos .todos-servicos .conteudo-servicos button:hover{
+#servicos button:hover{
     border: 1px solid var(--corSecundaria);
     color: var(--corSecundaria);
 }
@@ -553,13 +545,10 @@ body{
 
 #orcamento{
     background-color: white;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 #orcamento h4{
-    text-align: center;
-    padding: 50px 0;
-    font-size: 2.5em;
     color: var(--corSecundaria);
 }
 
@@ -568,7 +557,9 @@ body{
     justify-content: center;
 }
 
-#orcamento .conteudo-orcamento form{
+/*********formulário***********/
+
+form{
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -577,7 +568,7 @@ body{
     padding: 15px;
 }
 
-#orcamento .conteudo-orcamento form button{
+form button{
     padding: 5px 20px;
     border: none;
     border-radius: 15px;
@@ -586,17 +577,13 @@ body{
     background-color: var(--corPrincipal);
 }
 
-#orcamento .conteudo-orcamento form .campo{
+form .campo{
     width: 100%;
     position: relative;
     margin-bottom: 10px;
 }
 
-#orcamento .conteudo-orcamento form .campo fieldset{
-    border: 1px solid #ccc;
-}
-
-#orcamento .conteudo-orcamento form .campo label{
+form label{
     position: absolute;
     bottom: 0;
     left: 10px;
@@ -605,7 +592,7 @@ body{
     width: 100%;
 }
 
-#orcamento .conteudo-orcamento form .campo label.mensagem{
+form label.mensagem{
     position: absolute;
     top: 23px;
     left: 10px;
@@ -614,8 +601,8 @@ body{
     width: 100%;
 }
 
-#orcamento .conteudo-orcamento form .campo input,
-#orcamento .conteudo-orcamento form .campo textarea{
+form input,
+form textarea{
     background-color: transparent;
     width: 100%;
     border: none;
@@ -626,33 +613,71 @@ body{
     transition: all .3s ease-out;
 }
 
-#orcamento .conteudo-orcamento form .campo textarea{
+form textarea{
     border: 1px solid #ccc;
     margin-top: 23px;
 }
 
-#orcamento .conteudo-orcamento form .campo input:focus,
-#orcamento .conteudo-orcamento form .campo input:valid{
+form input:focus,
+form input:valid{
     border-bottom: 1px solid var(--corPrincipal);
 }
 
-#orcamento .conteudo-orcamento form .campo input:focus + label,
-#orcamento .conteudo-orcamento form .campo input:valid + label{
+form input:focus + label,
+form input:valid + label{
     bottom: 23px;
     left: 0;
     color: var(--corPrincipal);
     font-size: 0.9em;
 }
 
-#orcamento .conteudo-orcamento form .campo textarea:focus,
-#orcamento .conteudo-orcamento form .campo textarea:valid{
+form textarea:focus,
+form textarea:valid{
     border: 1px solid var(--corPrincipal);
 }
 
-#orcamento .conteudo-orcamento form .campo textarea:focus + label.mensagem,
-#orcamento .conteudo-orcamento form .campo textarea:valid + label.mensagem{
+form textarea:focus + label.mensagem,
+form textarea:valid + label.mensagem{
     top: 0;
     left: 0;
     color: var(--corPrincipal);
     font-size: 0.9em;
+}
+
+/********informacoes**********/
+
+#informacoesEmpresa{
+    background-color: var(--corSecundaria);
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+#informacoesEmpresa .conteudo-informacoes-empresa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#informacoesEmpresa .logo{
+    margin-right: 0;
+}
+#informacoesEmpresa .iconeRedesSociais{
+    display: inline-block;
+}
+#informacoesEmpresa .caixaInformacoes{
+    width: 220px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/**********rodapé*********/
+
+footer{
+    padding: 30px;
+    background-color: var(--corSecundaria);
+    color: var(--corPadrao);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
