@@ -20,6 +20,10 @@
     #acessorios .caixas-itens .itens{
         width: 80%;
     }
+
+    #orcamento .conteudo-orcamento form{
+        width: 50%;
+    }
 }
 
 
@@ -104,6 +108,7 @@
         width: 90%;
         height: 250px;
         margin: 0 auto;
+        border: none;
     }
     #servicos .todos-servicos .conteudo-servicos h3,
     #servicos .todos-servicos .conteudo-servicos h3.inverso{
@@ -114,6 +119,10 @@
     }
     #servicos .flex-item > .img-servicos{
         order: 1;
+    }
+
+    #orcamento .conteudo-orcamento form{
+        width: 70%;
     }
 }
 
@@ -136,6 +145,10 @@
     #banner .apresentacao p{
         font-size: 1.2em;
         width: 95%;
+    }
+
+    #orcamento .conteudo-orcamento form{
+        width: 90%;
     }
 }
 
